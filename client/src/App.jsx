@@ -5,6 +5,7 @@ import About from "./pages/About"
 import Profile from "./pages/Profie"
 import SignIn from "./pages/SignIn"
 import SignOut from "./pages/Signout"
+import Navbar from './components/Navbar'
 
 
 
@@ -13,15 +14,13 @@ const App = () => {
   return (
     <>
     <BrowserRouter>
+    <Navbar/>
     <Routes>
-   
       <Route path='/' element={<Home/>} />
       <Route path='/about' element={<About/>} />
       <Route path='/profile' element={<Profile/>} />
       <Route path='/sign-in' element={<SignIn/>} />
-      <Route path='/sign-out' element={<SignOut/>} />
-   
-     
+      <Route path='/sign-out' element={<SignOut/>} />  
     </Routes>
     </BrowserRouter>
     </>
